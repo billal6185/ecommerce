@@ -16,12 +16,14 @@
 		1839AA3523C9D9AD00208295 /* detilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839AA3423C9D9AD00208295 /* detilesViewController.swift */; };
 		183BF94B23CEDBF600A7D530 /* paymentsucsessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BF94A23CEDBF600A7D530 /* paymentsucsessViewController.swift */; };
 		183C05B323C327EF00137B27 /* SingupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C05B223C327EF00137B27 /* SingupViewController.swift */; };
+		183C0BF123D8411800A8C3D6 /* productCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C0BF023D8411800A8C3D6 /* productCollectionViewCell.swift */; };
 		1841DEDC23C2FB2C001C98D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841DEDB23C2FB2C001C98D4 /* AppDelegate.swift */; };
 		1841DEDE23C2FB2C001C98D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841DEDD23C2FB2C001C98D4 /* SceneDelegate.swift */; };
 		1841DEE023C2FB2C001C98D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841DEDF23C2FB2C001C98D4 /* ViewController.swift */; };
 		1841DEE323C2FB2C001C98D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841DEE123C2FB2C001C98D4 /* Main.storyboard */; };
 		1841DEE823C2FB2D001C98D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841DEE623C2FB2D001C98D4 /* LaunchScreen.storyboard */; };
 		1841DEF023C2FBB4001C98D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1841DEEF23C2FBB4001C98D4 /* GoogleService-Info.plist */; };
+		18CC652523D6F1E5006C047C /* sidemenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC652423D6F1E5006C047C /* sidemenuViewController.swift */; };
 		C65D7D2D9C3D3D331B55D209 /* Pods_ecommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D482D97396F15754A5A655C /* Pods_ecommerce.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,7 @@
 		1839AA3423C9D9AD00208295 /* detilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detilesViewController.swift; sourceTree = "<group>"; };
 		183BF94A23CEDBF600A7D530 /* paymentsucsessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentsucsessViewController.swift; sourceTree = "<group>"; };
 		183C05B223C327EF00137B27 /* SingupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupViewController.swift; sourceTree = "<group>"; };
+		183C0BF023D8411800A8C3D6 /* productCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productCollectionViewCell.swift; sourceTree = "<group>"; };
 		1841DED823C2FB2C001C98D4 /* ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1841DEDB23C2FB2C001C98D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1841DEDD23C2FB2C001C98D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		1841DEE723C2FB2D001C98D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1841DEE923C2FB2E001C98D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1841DEEF23C2FBB4001C98D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18CC652423D6F1E5006C047C /* sidemenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sidemenuViewController.swift; sourceTree = "<group>"; };
 		5D482D97396F15754A5A655C /* Pods_ecommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		611F4F5D78EBE20F13DDFFA7 /* Pods-ecommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce.debug.xcconfig"; path = "Target Support Files/Pods-ecommerce/Pods-ecommerce.debug.xcconfig"; sourceTree = "<group>"; };
 		D9A88D23435F5E464E089002 /* Pods-ecommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce.release.xcconfig"; path = "Target Support Files/Pods-ecommerce/Pods-ecommerce.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				1838FCF023CC75A700C17844 /* payViewController.swift */,
 				1838FCF223CC75F500C17844 /* selectpaymentViewController.swift */,
 				183BF94A23CEDBF600A7D530 /* paymentsucsessViewController.swift */,
+				18CC652423D6F1E5006C047C /* sidemenuViewController.swift */,
+				183C0BF023D8411800A8C3D6 /* productCollectionViewCell.swift */,
 				1841DEE123C2FB2C001C98D4 /* Main.storyboard */,
 				1841DEE623C2FB2D001C98D4 /* LaunchScreen.storyboard */,
 				1841DEE923C2FB2E001C98D4 /* Info.plist */,
@@ -236,12 +242,14 @@
 			files = (
 				1838FCEF23CC55C900C17844 /* submitViewController.swift in Sources */,
 				183914EF23C479CF00BF4360 /* HomeViewController.swift in Sources */,
+				183C0BF123D8411800A8C3D6 /* productCollectionViewCell.swift in Sources */,
 				1841DEE023C2FB2C001C98D4 /* ViewController.swift in Sources */,
 				1841DEDC23C2FB2C001C98D4 /* AppDelegate.swift in Sources */,
 				183900FE23C9D56000D18001 /* customCollectionViewCell.swift in Sources */,
 				183C05B323C327EF00137B27 /* SingupViewController.swift in Sources */,
 				1841DEDE23C2FB2C001C98D4 /* SceneDelegate.swift in Sources */,
 				1839AA3523C9D9AD00208295 /* detilesViewController.swift in Sources */,
+				18CC652523D6F1E5006C047C /* sidemenuViewController.swift in Sources */,
 				183BF94B23CEDBF600A7D530 /* paymentsucsessViewController.swift in Sources */,
 				1838FCF123CC75A700C17844 /* payViewController.swift in Sources */,
 				1838FCF323CC75F500C17844 /* selectpaymentViewController.swift in Sources */,

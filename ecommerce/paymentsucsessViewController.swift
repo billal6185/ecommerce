@@ -16,10 +16,8 @@ class paymentsucsessViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.paymentsuccess.layer.cornerRadius = 10
+        paymentsuccess.layer.cornerRadius = 10
     }
     
-
-   
 
 }

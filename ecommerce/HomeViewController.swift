@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var cview1: UICollectionView!
+    @IBOutlet weak var cview2: UICollectionView!
+    
+    var productname = ["50%off","t shirt","shirt","shoe","pant"]
     
 var name = ["image1","image2","image3","image4","image5","image6","image7","image8","image9","image10","image11","image12",]
     
@@ -24,18 +28,28 @@ var name = ["image1","image2","image3","image4","image5","image6","image7","imag
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return name.count
+        if collectionView == cview1{
+            
+            return name.count
+        }
+        return productname.count
     }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as!customCollectionViewCell
-        cell.priceview.text = price[indexPath.row]
-        cell.lableview.text = name[indexPath.row]
-        cell.imageview.image = UIImage(named: name[indexPath.row] + ".jpeg")
-    
-        return cell
-        
-       }
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            if collectionView == cview1{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath)as!customCollectionViewCell
+            cell.lableview.text = name[indexPath.row]
+            cell.priceview.text = price [indexPath.row]
+            cell.imageview.image = UIImage(named: name[indexPath.row] + ".jpeg")
+            return cell
+           }
+            else{
+                let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell2", for: indexPath)as!productCollectionViewCell
+                cell2.productLB.text = productname [indexPath.row]
+                cell2.productimage.image = UIImage(named: productname [indexPath.row] + ".jpeg")
+                return cell2
+            }
+    }
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         indexNo = indexPath.item
@@ -44,6 +58,7 @@ var name = ["image1","image2","image3","image4","image5","image6","image7","imag
 
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     let vc = segue.destination as! detilesViewController
     guard let indexNo = indexNo else{
         return
@@ -51,9 +66,10 @@ var name = ["image1","image2","image3","image4","image5","image6","image7","imag
     vc.getname = name[indexNo]
     vc.getimage = name[indexNo]
         vc.getprice = price[indexNo]
-   }
+        }
     
-}
+        }
+        
 extension ViewController : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -74,3 +90,5 @@ extension ViewController : UICollectionViewDelegateFlowLayout{
     
     
 }
+
+
